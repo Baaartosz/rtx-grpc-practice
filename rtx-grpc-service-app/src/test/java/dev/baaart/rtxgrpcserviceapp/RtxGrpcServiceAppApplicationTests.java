@@ -1,10 +1,10 @@
-package dev.baaart.rtxgprcserviceapp;
+package dev.baaart.rtxgrpcserviceapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RtxGprcServiceAppApplicationTests {
+class RtxGrpcServiceAppApplicationTests {
 
     @Test
     void contextLoads() {

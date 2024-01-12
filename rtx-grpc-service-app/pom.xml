@@ -12,11 +12,15 @@
     <groupId>dev.baaart</groupId>
     <artifactId>rtx-grpc-service-app</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>rtx-gprc-service-app</name>
-    <description>rtx-gprc-service-app</description>
+
+    <name>rtx-grpc-service-app</name>
+    <description>rtx-grpc-service-app</description>
 
     <properties>
         <java.version>17</java.version>
+        <protobuf.version>3.23.4</protobuf.version>
+        <protobuf-plugin.version>0.6.1</protobuf-plugin.version>
+        <grpc.version>1.58.0</grpc.version>
     </properties>
 
     <dependencies>
@@ -47,6 +51,39 @@
             <artifactId>rtx-grpc-service-interface</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>${grpc.version}</version>
+        </dependency>
+
+        <dependency>
+            <!-- Java 9+ compatibility - Do NOT update to 2.0.0 -->
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>1.3.5</version>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>2.15.0.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.devh</groupId>
+            <artifactId>grpc-server-spring-boot-autoconfigure</artifactId>
+            <version>2.15.0.RELEASE</version>
+        </dependency>
+
     </dependencies>
 
     <build>

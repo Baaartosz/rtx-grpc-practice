@@ -1,13 +1,13 @@
-package dev.baaart.rtxgprcserviceapp;
+package dev.baaart.rtxgrpcserviceapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RtxGprcServiceAppApplication {
+public class RtxGrpcServiceAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RtxGprcServiceAppApplication.class, args);
+        SpringApplication.run(RtxGrpcServiceAppApplication.class, args);
     }
 
 }
