@@ -1,0 +1,7 @@
+
+${AnsiStyle.BOLD}${AnsiColor.GREEN} ______  _______  ___ ___
+|   __ \|_     _||   |   |
+|     <   |   |  |-     -|
+|___|__|  |___|  |___|___|.wtf${AnsiStyle.NORMAL}
+${AnsiColor.GREEN}SpringBoot ${spring-boot.formatted-version}
+${AnsiStyle.NORMAL}
