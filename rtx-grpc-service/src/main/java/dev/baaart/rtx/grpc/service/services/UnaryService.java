@@ -1,4 +1,4 @@
-package dev.baaart.rtx.grpc.service.app.services;
+package dev.baaart.rtx.grpc.service.services;
 
 import dev.baaart.rtx.grpc.models.unary.HelloReply;
 import dev.baaart.rtx.grpc.models.unary.HelloRequest;
