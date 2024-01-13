@@ -6,7 +6,6 @@ import dev.baaart.rtx.grpc.models.unary.HelloRequest;
 import dev.baaart.rtx.grpc.models.unary.UnaryServiceGrpc;
 import net.devh.boot.grpc.client.inject.GrpcClient;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Map;
 
