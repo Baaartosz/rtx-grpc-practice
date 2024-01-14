@@ -23,7 +23,7 @@ public class ClientStreamingService extends ClientStreamingServiceGrpc.ClientStr
 
             @Override
             public void onError(Throwable t) {
-                responseObserver.onError(new Throwable());
+                responseObserver.onError(t);
             }
 
             @Override
