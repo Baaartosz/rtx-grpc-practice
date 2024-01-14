@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package dev.baaart.rtx.grpc.models.bidirectionalstreaming;
+
+option java_multiple_files = true;
+option java_package = "dev.baaart.rtx.grpc.models.bidirectionalstreaming";
+option java_outer_classname = "BiDirectionalStreamingProto";
+
+// The greeting service definition.
+service BiDirectionalService {
+  // Sends a greeting
+  rpc SayHello (stream HelloRequest) returns (stream HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  string message = 1;
+}
