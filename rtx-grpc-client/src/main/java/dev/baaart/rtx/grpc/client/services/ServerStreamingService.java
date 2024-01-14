@@ -7,7 +7,6 @@ import dev.baaart.rtx.grpc.models.serverstreaming.ServerStreamingServiceGrpc;
 import io.grpc.stub.StreamObserver;
 import lombok.SneakyThrows;
 import net.devh.boot.grpc.client.inject.GrpcClient;
-import org.checkerframework.checker.units.qual.C;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
