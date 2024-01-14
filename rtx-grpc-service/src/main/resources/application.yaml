@@ -1,0 +1,3 @@
+spring:
+  application:
+    banner: banner.txt

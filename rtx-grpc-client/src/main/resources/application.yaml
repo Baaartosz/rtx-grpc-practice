@@ -1,0 +1,18 @@
+spring:
+  application:
+    banner: banner.txt
+
+grpc:
+  client:
+    rtx-grpc-service-unary:
+      address: static://localhost:9090
+      negotiation-type: plaintext
+    rtx-grpc-service-serverstreaming:
+      negotiation-type: plaintext
+      address: static://localhost:9090
+    rtx-grpc-service-clientstreaming:
+      address: static://localhost:9090
+      negotiation-type: plaintext
+    rtx-grpc-service-bidirectionalstreaming:
+      address: static://localhost:9090
+      negotiation-type: plaintext
