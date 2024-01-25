@@ -1,5 +1,6 @@
 package dev.baaart.rtx.grpc.service.configs;
 
+import dev.baaart.rtx.grpc.service.services.BiDirectionalStreamingService;
 import dev.baaart.rtx.grpc.service.services.ClientStreamingService;
 import dev.baaart.rtx.grpc.service.services.ServerStreamingService;
 import dev.baaart.rtx.grpc.service.services.UnaryService;
@@ -22,5 +23,10 @@ public class GrpcUnitTestConfiguration {
     @Bean
     ClientStreamingService clientStreamingService(){
         return new ClientStreamingService();
+    }
+
+    @Bean
+    BiDirectionalStreamingService biDirectionalStreamingService(){
+        return new BiDirectionalStreamingService();
     }
 }
