@@ -12,12 +12,16 @@ import java.util.Map;
 @Service
 public class UnaryService {
 
+    private UnaryServiceGrpc.UnaryServiceBlockingStub unaryService;
+
     @GrpcClient("rtx-grpc-service-unary")
-    UnaryServiceGrpc.UnaryServiceBlockingStub synchronousClient;
+    public void setUnaryService(UnaryServiceGrpc.UnaryServiceBlockingStub chatService) {
+        this.unaryService = chatService;
+    }
 
     public Map<Descriptors.FieldDescriptor, Object> getName(String name){
         HelloRequest helloRequest = HelloRequest.newBuilder().setName(name).build();
-        HelloReply helloReply = synchronousClient.sayHello(helloRequest);
+        HelloReply helloReply = unaryService.sayHello(helloRequest);
         return helloReply.getAllFields();
     }
 }
